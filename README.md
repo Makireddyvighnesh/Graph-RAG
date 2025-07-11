@@ -19,10 +19,6 @@ The system is composed of the following components:
     *   **Average Exact Match (EM): 0.0000**
     *   **Average F1 Score: 0.2818**
 
-## Challenges Encountered
-
-During the implementation of this project, the main challenge encountered was related to network connectivity issues. Specifically, there were repeated timeouts when attempting to download the `spacy` model. This was resolved by increasing the timeout value and using a direct download link.
-
 ## Suggestions for Improvement
 
 This project is a basic implementation and can be improved in several ways:

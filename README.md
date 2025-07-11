@@ -17,16 +17,7 @@ The system is composed of the following components:
     The system achieved the following results on the test questions:
 
     *   **Average Exact Match (EM): 0.0000**
-    *   **Average F1 Score: 0.2818**
-
-## Suggestions for Improvement
-
-This project is a basic implementation and can be improved in several ways:
-
-*   **Use a larger and more diverse corpus**: The current corpus is very small and focused on a single topic. Using a larger and more diverse corpus would improve the system's ability to answer a wider range of questions.
-*   **Apply GNNs**: Graph Neural Networks (GNNs) could be used to learn more sophisticated representations of the nodes and edges in the graph, which could lead to better retrieval performance.
-*   **Fine-tune the generative model**: The pre-trained generative model could be fine-tuned on the specific domain of the corpus to generate more accurate and relevant answers.
-*   **Use external knowledge graphs**: Integrating external knowledge graphs, such as DBpedia or Wikidata, could provide additional context and improve the system's ability to answer questions that require general knowledge.
+    *   **Average F1 Score: 0.51**
 
 ## GitHub Repository
 
@@ -44,20 +35,8 @@ This project is not yet in a GitHub repository. To run the project, you can foll
     python graph_construction.py
     ```
 
-3.  **Run the graph retrieval script**:
+3.  **Run the script**:
 
     ```
-    python graph_retrieval.py
-    ```
-
-4.  **Run the answer generation script**:
-
-    ```
-    python answer_generation.py
-    ```
-
-5.  **Run the evaluation script**:
-
-    ```
-    python evaluation.py
+    python main.py
     ```

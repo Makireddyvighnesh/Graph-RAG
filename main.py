@@ -19,6 +19,7 @@ def main():
         question = qa['question']
         reference = qa['answer']
         context = get_relevant_text_from_graph(G, question)
+        
         full_context = " ".join(context)
         prediction = generate_answer(question, full_context)
 
@@ -26,6 +27,7 @@ def main():
         f1 = f1_score(prediction, reference)
 
         print(f"Q{i+1}: {question}")
+        print("Context retrieved:", context)
         print(f"Prediction: {prediction}")
         print(f"Reference: {reference}")
         print(f"EM: {em}, F1: {f1:.2f}\\n")

@@ -5,7 +5,7 @@ import numpy as np
 
 model = SentenceTransformer('all-MiniLM-L6-v2')
 
-def get_relevant_text_from_graph(G, question, top_k=3):
+def get_relevant_text_from_graph(G, question, top_k=5):
     q_vec = model.encode([question])
     sentence_scores = []
 

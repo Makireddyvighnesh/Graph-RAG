@@ -1,0 +1,7 @@
+networkx
+matplotlib
+spacy
+scikit-learn
+transformers
+torch
+nltk
